@@ -2,12 +2,20 @@ body {
     color: black;
     background: whitesmoke;
     margin: 0px;
-    padding: 20px;
+    font-family: Arial, sans-serif; /* Adiciona uma fonte padrão */
 }
 
 header {
     border-bottom: solid 1px rgb(255, 0, 0);
     padding: 20px;
-    font-size: 32px; 
+    font-size: 32px; /* Corrigido de 32x para 32px */
     color: rgb(255, 0, 0);
+}
+
+section {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100vh; /* Faz com que a section ocupe a altura total da tela */
+    text-align: center; /* Opcional: centraliza o texto dentro da section */
 }
