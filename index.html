@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="shortcut icon" href="bks.png" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boykisser Miscellaneous</title>
     <style>
         body {
             color: black;
             background: whitesmoke;
-            margin: 0px;
+            margin: 0;
             font-family: Arial, sans-serif;
         }
 
         header {
-            border-bottom: solid 1px rgb(255, 0, 0);
+            border-bottom: 1px solid rgb(255, 0, 0);
             padding: 20px;
             font-size: 32px;
             color: rgb(255, 0, 0);
+            text-align: center;
         }
 
         section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             text-align: center;
+            padding: 20px;
         }
 
-        div {
-            text-align: center;
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .video-link {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .video-link img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .video-link img:hover {
+            transform: scale(1.1);
         }
     </style>
-    <title>Boykisser Miscellaneous</title>
 </head>
-
 <body>
+    <header>BOYKISSER FOR U</header>
+
     <section>
-        <div>
-            <header>BOYKISSER FOR U</header>
-            <h1>WHO IS BOYKISSER?</h1>
-            <!-- Adicionando a imagem -->
-            <img src="https://seeklogo.com/images/B/boykisser-logo-2C0766BE33-seeklogo.com.png" alt="Logo do Boykisser" width="300" height="auto">
-        </div>
+        <h1>WHO IS BOYKISSER?</h1>
+        <img src="https://seeklogo.com/images/B/boykisser-logo-2C0766BE33-seeklogo.com.png" alt="Logo do Boykisser">
     </section>
 
     <section>
         <h2>Learn About Boykisser:</h2>
-        <div>
-           <a href="https://www.youtube.com/watch?v=Q5-bhcPRlg8"
-            <img src="https://img.youtube.com/vi/Q5-bhcPRlg8/maxresdefault.jpg"
+        <a class="video-link" href="https://www.youtube.com/watch?v=Q5-bhcPRlg8">
+            <img src="https://img.youtube.com/vi/Q5-bhcPRlg8/maxresdefault.jpg" alt="Thumbnail do vídeo">
         </a>
-
-        </div>
     </section>
 
 </body>
-
 </html>
