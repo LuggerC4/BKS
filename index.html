@@ -26,15 +26,18 @@
             padding: 20px;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
+        .video-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centraliza os vídeos horizontalmente */
         }
 
         .video-link {
-            display: inline-block;
-            margin-top: 20px;
+            flex: 0 0 calc(33.33% - 20px); /* Para 3 vídeos por linha, com margens */
+            margin: 10px; /* Espaçamento entre os vídeos */
+            transition: transform 0.3s ease;
         }
 
         .video-link img {
@@ -42,7 +45,6 @@
             height: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
         }
 
         .video-link img:hover {
@@ -60,9 +62,24 @@
 
     <section>
         <h2>Learn About Boykisser:</h2>
-        <a class="video-link" href="https://www.youtube.com/watch?v=Q5-bhcPRlg8">
-            <img src="https://img.youtube.com/vi/Q5-bhcPRlg8/maxresdefault.jpg" alt="Thumbnail do vídeo">
-        </a>
+        <ul class="video-list">
+            <li class="video-link">
+                <a href="https://www.youtube.com/watch?v=Q5-bhcPRlg8">
+                    <img src="https://img.youtube.com/vi/Q5-bhcPRlg8/maxresdefault.jpg" alt="Thumbnail do vídeo">
+                </a>
+            </li>
+            <li class="video-link">
+                <a href="https://www.youtube.com/watch?v=ouZQ_D8rTtI">
+                    <img src="https://img.youtube.com/vi/ouZQ_D8rTtI/maxresdefault.jpg" alt="Thumbnail do vídeo">
+                </a>
+            </li>
+            <!-- Adicione mais vídeos da mesma forma -->
+            <li class="video-link">
+                <a href="https://www.youtube.com/watch?v=video_id_here">
+                    <img src="https://img.youtube.com/vi/video_id_here/maxresdefault.jpg" alt="Thumbnail do vídeo">
+                </a>
+            </li>
+        </ul>
     </section>
 
 </body>
